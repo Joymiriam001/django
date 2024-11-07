@@ -1,0 +1,28 @@
+{% load static%}
+<!doctype html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="icon" href="{% static 'images/safaricom.jpg' %}">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+</head>
+<body>
+<a href="{% url 'my_about' %}">About us</a>
+<a href="{% url 'my_contact' %}">Contact</a>
+<a href="{% url 'my_blog' %}">Blogs</a>
+<a href="{% url 'my_services' %}">Services</a>
+<h2>Welcome to django</h2>
+<p><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </span></p>
+<img src="{% static 'images/Dam Redhill Limuru.jpg' %}" alt="">
+<img src="{% static 'images/Laikipia Plateau.jpg' %}" alt="">
+<img src="{% static 'images/Lamu.jpg' %}" alt="">
+<img src="{% static 'images/tigoni-waterfalls.jpg' %}" alt="">
+<img src="{% static 'images/tsavo-east-national-park2.jpg' %}" alt="">
+
+<script src="{% static 'js/main.js' %}"></script>
+</body>
+</html>
